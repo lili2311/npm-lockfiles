@@ -6,7 +6,7 @@ LABEL "com.github.actions.icon"="mic"
 LABEL "com.github.actions.color"="purple"
 
 LABEL "repository"="http://github.com/snyk/snyk"
-LABEL "homepage"="http://github.com/snyk/"
+LABEL "homepage"="http://github.com/snyk/snyk"
 LABEL "maintainer"="Snyk snyk-sec@snyk.io"
 
 ADD entrypoint.sh /entrypoint.sh
