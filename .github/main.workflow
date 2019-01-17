@@ -15,3 +15,13 @@ action "GitHub Action for npm" {
   uses = "actions/npm@e7aaefed7c9f2e83d493ff810f17fa5ccd7ed437"
   needs = ["Snyk"]
 }
+
+workflow "New workflow" {
+  on = "push"
+  resolves = ["Snyk CLI"]
+}
+
+action "Snyk CLI" {
+  uses = "https://github.com/lili2311/snyk-cli-action"
+  secrets = ["SNYK_TOKEN"]
+}
