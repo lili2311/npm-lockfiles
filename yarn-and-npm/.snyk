@@ -1,0 +1,12 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:minimatch:20160620':
+    - tap > nyc > glob > minimatch:
+        patched: '2023-03-18T21:05:35.044Z'
+    - tap > nyc > rimraf > glob > minimatch:
+        patched: '2023-03-18T21:05:35.044Z'
+    - tap > nyc > spawn-wrap > rimraf > glob > minimatch:
+        patched: '2023-03-18T21:05:35.044Z'
